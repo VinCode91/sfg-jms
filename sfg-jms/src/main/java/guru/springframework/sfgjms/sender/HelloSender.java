@@ -20,7 +20,7 @@ public class HelloSender {
         System.out.println("Sending message...");
         HelloWorldMessage message = HelloWorldMessage.builder()
                 .id(UUID.randomUUID())
-                .message("Hello World")
+                .message("Hello World Sunshine")
                 .build();
 
         jmsTemplate.convertAndSend(JmsConfig.MY_QUEUE, message);
